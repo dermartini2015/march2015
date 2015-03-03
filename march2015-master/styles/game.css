@@ -1,0 +1,69 @@
+/*
+    Document   : game.css
+
+    Author     : Reichert, Tobias, OFR
+                 Rothe, Martin, OFR
+    History:
+    2015-02-23  TR  Create Document
+*/
+
+#moorhuhn0{
+
+    display: none;
+    width: 75px;
+    height: 50px;
+
+}
+
+#moorhuhn1{
+
+    display: none;
+    width: 75px;
+    height: 50px;
+
+}
+
+#kugel{
+    width: 32px;
+    height: 65px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin: 650px 30px 0 0;
+}
+
+#ammo{
+    color: #000;
+    font-size: xx-large;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin: 650px 0 0 0;
+}
+
+#score{
+    color: red;
+    font-size: xx-large;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin: 650px 150px 0 0;
+}
+
+#time{
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 650px 0 0 -480px;
+}
+
+#game{
+
+    cursor: url(../images/fadenkreuz.png), default;
+
+    background-image: url(../images/background.jpg);
+
+
+}
