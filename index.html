@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/core.css">
+  <link rel="stylesheet" href="styles/game.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+</head>
+<body>
+    <div id="game_object" style="position: relative">
+        <canvas id="game" width="1024" height="768" style="position: absolute;" ></canvas>
+        <img id="moorhuhn0" src="images/sl_0.gif" class="hidden">
+        <img id="moorhuhn1" src="images/sl_1.gif" class="hidden">
+        <img id="kugel" src="images/kugel.png" class="hidden">
+        <div id="ammo" class="hidden">10</div>
+        <div id="score" class="hidden">0</div>
+        <div id="time" class="hidden">60</div>
+
+
+        <div id="menu">
+            <div id="buttonsDiv">
+                <div id=logoSchrift>
+
+                <table>
+                <tr>
+                    <td> Fang</td>
+                    <td> <img src="images/sl_1.gif" height="150"></td>
+                    <td> Isaac</td>
+                    </tr>
+
+                </table>
+
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <a href="#" class="action-button animate green" id="anleitungButton">Spielanleitung</a>
+                <a href="#" class="action-button animate blue" id="spielstarten">Spiel starten</a>
+                <a href="#" class="action-button animate red" id="einstellungen">Einstellungen</a>
+                <a href="#" class="action-button animate yellow" id="highscore">Highscore</a>
+        </div>
+
+        <div id="spielanleitungDiv"  class="hidden">
+
+            <br>
+
+            <p >Ziel des Spiels ist es, die fliegenden „Moorhühner“ abzuschießen. <br><br>
+
+                Je mehr Sie davon in den vorgegebenen 90 Sekunden treffen, umso höher fällt Ihre Punktezahl aus. Dabei steuern Sie das                      Zielkreuz mit der Maus, per Linksklick feuern Sie eine Ladung Schrot ab.
+            </p>
+
+            <p>
+            Am Bildschirmrand sehen Sie verschiedene Anzeigen. <br><br>
+            Oben links wird die verbleibende Zeit für das Spiel angegeben, während Sie oben rechts Ihren aktuellen Punktestand                     einsehen können. <br><br>
+
+            Unten rechts befindet sich die Anzeige der übrigen Patronen für Ihre Waffe. Aber keine Sorge: Sollten Sie alle Geschosse                abgefeuert haben, können Sie mit einem rechen Mausklick für neue Munition sorgen.
+            </p>
+
+
+        <a href="#" class="action-button shadow animate green" id="zuruckAnleitungButton">Zurück</a>
+
+        </div> <!-- ENDE DIV SPIELANLEITUNG -->
+
+        <div id="eintragenHighscoreDiv" class="hidden" >
+          <p>
+              <br/>Gut gezielt!<br/>
+          </p>
+
+          <p>Du hast es geschafft, in die Highscore zu kommen. </p>
+
+            <form method="post" id="formular">
+		     <p> Highscore – Dein Name<br/></p>
+                <input type="text" name="name" placeholder="Name"/>
+		        <input type="hidden" name="punkte" id="punkte">
+		        <input type="button" value="senden" id="sendehighscore"/>
+		  <br/>
+
+	       </form>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+        <a href="#" class="action-button shadow animate blue" id="nochmalspielenButton">Nochmal spielen!</a>
+        <a href="#" class="action-button shadow animate blue" id="zurückzumMenüButton">Menü</a>
+
+        </div> <!-- ENDE DIV SPIELANLEITUNG -->
+
+
+
+
+
+
+        <div id="spieleinestellungen" class="hidden">
+
+             <h2>Einstellungen</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- Einstellen des Schwierigkeitsgrades           -->
+
+           <div class="spaceEmOut">
+        <fieldset class="switch switch-three">
+          <legend>
+            Schwierigkeitsgrad
+          </legend>
+          <input id="Einfach" name="view4" type="radio" checked />
+          <label for="Einfach">
+            Einfach
+          </label>
+          <input id="Mittel" name="view4" type="radio" />
+          <label for="Mittel">
+            Mittel
+          </label>
+          <input id="Experte" name="view4" type="radio" />
+          <label for="Experte">
+            Experte
+          </label>
+          <span class="switch-button">
+          </span>
+        </fieldset>
+      </div>
+           <br>
+           <br>
+           <br>
+      <div class="spaceEmOut">
+
+        <fieldset class="switch switch-two">
+          <legend>
+            Musik
+          </legend>
+          <input id="musik_yes" name="musik" type="radio" checked />
+          <label for="musik_yes">
+            AN
+          </label>
+          <input id="musik_yes" name="musik" type="radio" />
+          <label for="musik_yes">
+            AUS
+          </label>
+          <span class="switch-button">
+          </span>
+        </fieldset>
+     </div>
+            <br>
+           <br>
+           <br>
+
+       <div class="spaceEmOut">
+          <fieldset class="switch switch-two">
+          <legend>
+            Soundeffekte
+          </legend>
+
+          <input id="sound_on" name="view" type="radio" checked />
+          <label for="sound_on">
+            AN
+          </label>
+          <input id="sound_off" name="view" type="radio" />
+          <label for="sound_off">
+
+            AUS
+          </label>
+          <span class="switch-button">
+          </span>
+        </fieldset>
+      </div>
+
+        <a href="#" class="action-button shadow animate blue" id="zuruckEinstellungenButton">Zurück</a>
+
+        </div> <!-- ENDE DIV EINSTELLUNGEN -->
+        </div> <!-- ENDE DIV Menü -->
+
+
+
+        <!--  Menübutton der immer oben links im Spiel erscheint, wenn das Spiel läuft
+        um jederzeit ins Menü zu kommen
+        -->
+
+        <div id="onlymenubuttondiv" class="hidden">
+            <a href="#" class="animate red menubutton" id="onlymenu">Menü</a>
+
+        </div> <!-- ENDE DIV ONLYMENÜBUTTON -->
+
+    </div> <!-- ENDE DIV GAMEOBJEKT -->
+
+    <script src="scripts/game.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
