@@ -12,9 +12,10 @@ td {
 }
 
 #logoSchrift {
+    margin-left: 80px;
+    left: 80px;
     font-size: 100px;
     font-family: 'Cabin Sketch', cursive;
-
 }
 
 body
@@ -40,7 +41,7 @@ p {
 }
 
 #menu {
-    position: relative;
+    position: absolute;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -155,9 +156,22 @@ p {
     display: none;
 
 }
+
+.position{
+    position: absolute;
+    width: 690px;
+}
+
+.show{
+    transition: all 1s linear 1s;
+    -webkit-transition: all 1s linear 1s;
+    -moz-transition: all 1s linear 1s;
+    -o-transition: all 1s linear 1s;
+    opacity: 1;
+}
 #onlymenubuttondiv {
 
-    position: relative;
+    position: absolute;
     top: 10px;
     left: -150;
 
@@ -516,5 +530,25 @@ input:focus, textarea:focus {
 
 
 
+
+
+
+
+
+
+
+#buttonsDiv {
+    position: absolute;
+}
+
+
+
+.hiddenGameContent {
+    display: none;
+}
+
+#HighscoreDiv {
+
+}
 
 

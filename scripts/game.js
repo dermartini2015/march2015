@@ -83,8 +83,8 @@ var hidemenu = function () {
 
 // Funktion zum Verschwinden lassen des Hauptmenüs und Anzeigen des Divs mit der Spieleinstellungen
 
-    var spieleinstellungenButton = document.getElementById("einstellungen");
-    var spieleinstellungenDiv = document.getElementById("spieleinestellungen");
+    var spieleinstellungenButton = document.getElementById("einstellungenButton");
+    var spieleinstellungenDiv = document.getElementById("spieleinestellungenDiv");
     var zuruckButtonEinstellungen = document.getElementById("zuruckEinstellungenButton");
 
 var hidemenusettings = function () {
@@ -96,6 +96,23 @@ var hidemenusettings = function () {
     spieleinstellungenButton.addEventListener("click", hidemenusettings);
     zuruckButtonEinstellungen.addEventListener("click", hidemenusettings);
 
+
+    //------------------------------------------------------------------------------------------------------------ //
+
+// Funktion zum Verschwinden lassen des Hauptmenüs und Anzeigen des Divs mit dem Highscore
+
+    var highscoreButton = document.getElementById("highscoreButton");
+    var hightscoreDiv = document.getElementById("HighscoreDiv");
+    var zuruckButtonHighscore = document.getElementById("zuruckHighscoreButton");
+
+var hidemenuhighscore = function () {
+    hightscoreDiv.classList.toggle("hidden");
+    buttonsDiv.classList.toggle("hidden");
+};
+
+// Eventlistener für den Button "Spielanleitung" und den "Zurück" Button auf dem Spielanleitungs DIV
+    highscoreButton.addEventListener("click", hidemenuhighscore);
+    zuruckButtonHighscore.addEventListener("click", hidemenuhighscore);
 
 
 

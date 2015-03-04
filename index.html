@@ -11,12 +11,12 @@
 <body>
     <div id="game_object">
         <canvas id="game"></canvas>
-        <img id="moorhuhn0" src="images/sl_0.gif" class="hidden">
-        <img id="moorhuhn1" src="images/sl_1.gif" class="hidden">
-        <img id="kugel" src="images/kugel.png" class="hidden">
-        <div id="ammo" class="hidden">10</div>
-        <div id="score" class="hidden">0</div>
-        <div id="time" class="hidden">60</div>
+        <img id="moorhuhn0" src="images/sl_0.gif" class="hiddenGameContent position">
+        <img id="moorhuhn1" src="images/sl_1.gif" class="hiddenGameContent position">
+        <img id="kugel" src="images/kugel.png" class="hiddenGameContent position">
+        <div id="ammo" class="hiddenGameContent">10</div>
+        <div id="score" class="hiddenGameContent">0</div>
+        <div id="time" class="hiddenGameContent">60</div>
 
 
         <div id="menu" >
@@ -39,11 +39,11 @@
                 <br>
                 <a href="#" class="action-button animate green" id="anleitungButton">Spielanleitung</a>
                 <a href="#" class="action-button animate blue" id="spielstarten">Spiel starten</a>
-                <a href="#" class="action-button animate red" id="einstellungen">Einstellungen</a>
-                <a href="#" class="action-button animate yellow" id="highscore">Highscore</a>
+                <a href="#" class="action-button animate red" id="einstellungenButton">Einstellungen</a>
+                <a href="#" class="action-button animate yellow" id="highscoreButton">Highscore</a>
         </div>
 
-        <div id="spielanleitungDiv"  class="hidden">
+        <div id="spielanleitungDiv"  class="hidden position">
 
             <br>
 
@@ -64,7 +64,22 @@
 
         </div> <!-- ENDE DIV SPIELANLEITUNG -->
 
-        <div id="eintragenHighscoreDiv"  class="hidden">
+        <div id="HighscoreDiv" class="hidden position">
+
+            <p> Der aktuelle Highscore</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        <a href="#" class="action-button shadow animate blue" id="zuruckHighscoreButton">Zurück</a>
+
+        </div> <!-- ENDE DIV Highscore -->
+
+
+        <div id="eintragenHighscoreDiv"  class="hidden position">
           <p>
               <br/>Gut gezielt!<br/>
           </p>
@@ -124,12 +139,12 @@
 
         <a href="#" class="action-button shadow animate blue" id="zurückzumMenüButton">Menü</a>
 
-        </div> <!-- ENDE DIV SPIELANLEITUNG -->
+        </div> <!-- ENDE DIV EintragenHighscore -->
 
 
-        <div id="spieleinestellungen" class="hidden">
+        <div id="spieleinestellungenDiv" class="hidden position">
 
-             <h2>Einstellungen</h2>
+            <p>Einstellungen</p>
             <br>
             <br>
             <br>
