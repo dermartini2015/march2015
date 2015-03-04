@@ -9,8 +9,8 @@
 
 </head>
 <body>
-    <div id="game_object" style="position: relative">
-        <canvas id="game" width="1024" height="768" style="position: absolute;" ></canvas>
+    <div id="game_object">
+        <canvas id="game"></canvas>
         <img id="moorhuhn0" src="images/sl_0.gif" class="hidden">
         <img id="moorhuhn1" src="images/sl_1.gif" class="hidden">
         <img id="kugel" src="images/kugel.png" class="hidden">
@@ -19,8 +19,8 @@
         <div id="time" class="hidden">60</div>
 
 
-        <div id="menu">
-            <div id="buttonsDiv">
+        <div id="menu" >
+            <div id="buttonsDiv" >
                 <div id=logoSchrift>
 
                 <table>
@@ -64,14 +64,14 @@
 
         </div> <!-- ENDE DIV SPIELANLEITUNG -->
 
-        <div id="eintragenHighscoreDiv" class="hidden" >
+        <div id="eintragenHighscoreDiv"  class="hidden">
           <p>
               <br/>Gut gezielt!<br/>
           </p>
 
           <p>Du hast es geschafft, in die Highscore zu kommen. </p>
 
-            <form method="post" id="formular">
+           <!-- <form method="post" id="formular">
 		     <p> Highscore – Dein Name<br/></p>
                 <input type="text" name="name" placeholder="Name"/>
 		        <input type="hidden" name="punkte" id="punkte">
@@ -85,15 +85,46 @@
             <br/>
             <br/>
             <br/>
+-->
 
-        <a href="#" class="action-button shadow animate blue" id="nochmalspielenButton">Nochmal spielen!</a>
+                    <div id="form-div">
+            <form class="form" id="form1">
+
+              <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+              </p>
+
+
+              <div class="submit">
+                <input type="submit" value="SEND" id="button-blue"/>
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
         <a href="#" class="action-button shadow animate blue" id="zurückzumMenüButton">Menü</a>
 
         </div> <!-- ENDE DIV SPIELANLEITUNG -->
-
-
-
-
 
 
         <div id="spieleinestellungen" class="hidden">

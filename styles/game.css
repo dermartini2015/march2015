@@ -62,8 +62,16 @@
 #game{
 
     cursor: url(../images/fadenkreuz.png), default;
-
     background-image: url(../images/background.jpg);
-
+    position: absolute;
+    width: 1024px;
+    height: 768px;
+    left: 100px;
+    top: 50px;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
 
 }
